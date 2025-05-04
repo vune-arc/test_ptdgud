@@ -13,7 +13,7 @@ export const UserProvider = ({ children }) => {
     const apiUrl =
       window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
         ? 'http://localhost:3000/api/db.json' // local
-        : 'https://your-project-name.vercel.app/api/db.json';
+        : 'https://test-ptdgud.onrender.com/api/db.json';
     fetch(apiUrl)
       .then((res) => res.json())
       .then((data) => {
